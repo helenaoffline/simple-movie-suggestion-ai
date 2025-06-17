@@ -3,7 +3,7 @@ import google.generativeai as genai
 import re 
 
 #COnfigura Gemini
-api_keys =  st.secrets("API_KEY")
+api_keys = st.secrets["API_KEY"]
 genai.configure(api_key=api_keys)
 model = genai.GenerativeModel("gemini-2.0-flash")
 
